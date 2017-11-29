@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="CheckList" representedClassName="CheckList" syncable="YES">
+        <attribute name="deviceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="idx" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="inspectionPro" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Device" representedClassName="Device" syncable="YES">
+        <attribute name="department" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceSN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="idx" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="rfCard" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DownloadUpdate" representedClassName="DownloadUpdate" syncable="YES">
+        <attribute name="deviceTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dvsTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mappingTime" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="deviceUpdateTime" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Device" syncable="YES"/>
+        <relationship name="dvsUpdateTime" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DVS" syncable="YES"/>
+        <relationship name="mappingUpdateTime" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mapping" syncable="YES"/>
+    </entity>
+    <entity name="DVS" representedClassName="DVS" syncable="YES">
+        <attribute name="dvs" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="dvsCard" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="factory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="line" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="section" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="station" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Employee" representedClassName="Employee" syncable="YES">
+        <attribute name="cardID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="department" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="idx" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="jobID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploadTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="InspectionRecord" representedClassName="InspectionRecord" syncable="YES">
+        <attribute name="dvs" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="idx" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="inpectionNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inspectionPro" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inspectionStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inspectionTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rfCat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sn" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="InspectionStatus" representedClassName="InspectionStatus" syncable="YES">
+        <attribute name="deviceID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="inspectionStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inspectionTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="InspectionTime" representedClassName="InspectionTime" syncable="YES">
+        <attribute name="deviceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="idx" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Mapping" representedClassName="Mapping" syncable="YES">
+        <attribute name="department" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dvsCard" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="idx" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="rfCard" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CheckList" positionX="-54" positionY="-9" width="128" height="135"/>
+        <element name="Device" positionX="-18" positionY="45" width="128" height="150"/>
+        <element name="DownloadUpdate" positionX="36" positionY="135" width="128" height="135"/>
+        <element name="DVS" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Employee" positionX="-9" positionY="81" width="128" height="150"/>
+        <element name="InspectionRecord" positionX="18" positionY="90" width="128" height="180"/>
+        <element name="InspectionStatus" positionX="0" positionY="81" width="128" height="90"/>
+        <element name="InspectionTime" positionX="-9" positionY="108" width="128" height="135"/>
+        <element name="Mapping" positionX="-36" positionY="9" width="128" height="135"/>
+    </elements>
+</model>

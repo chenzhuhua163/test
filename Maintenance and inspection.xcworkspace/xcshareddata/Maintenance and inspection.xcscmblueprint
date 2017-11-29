@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "3a0e3cbf-b467-46d9-ae35-4aa0fd834697++6283" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3a0e3cbf-b467-46d9-ae35-4aa0fd834697++6283" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A7CE2C42-1416-4AB0-B596-E65243F8CC97",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3a0e3cbf-b467-46d9-ae35-4aa0fd834697++6283" : "Maintenance%20and%20inspection2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Maintenance and inspection",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Maintenance and inspection.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/10.128.204.28\/svn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3a0e3cbf-b467-46d9-ae35-4aa0fd834697++6283"
+    }
+  ]
+}

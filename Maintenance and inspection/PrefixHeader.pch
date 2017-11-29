@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  Maintenance and inspection
+//
+//  Created by jack55_chen on 17/5/10.
+//  Copyright © 2017年 Youxing_Wang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <CoreData/CoreData.h>
+//#import "NSObject+coreDataDB.h"
+
+#import "Device.h"
+#import "CheckList.h"
+#import "DVS.h"
+#import "Employee.h"
+#import "InspectionTime.h"
+#import "Mapping.h"
+#import "AppDelegate.h"
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,9 @@
+
+
+target 'Maintenance and inspection' do
+
+pod 'FMDB'
+pod 'AFNetworking'
+pod 'SSZipArchive'
+
+end             
